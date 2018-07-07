@@ -28,8 +28,8 @@ $ apt-get update
 $ apt-get install -y build-essential libgmp3-dev golang-1.9 golang-1.9-doc git
 $ git clone https://github.com/ethereum/go-ethereum.git
 $ cd go-ethereum
-$ ln /usr/lib/go-1.9/bin/go /usr/bin/go
+$ sudo ln /usr/lib/go-1.9/bin/go /usr/bin/go # golang 경로설저
 $ git checkout refs/tags/v1.7.3
 $ make geth
-$ cp build/bin/geth /usr/local/bin/
+$ sudo cp build/bin/geth /usr/local/bin/
 ```
